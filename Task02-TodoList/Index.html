@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List 2023</title>
+
+     <!-- Primary meta tags -->
+     <meta name="title" content="Todo-List 2023 ">
+     <meta name="description" content="This is a todo list website made by mohamedhamthan">
+ 
+     <!-- Link in Favicon -->
+     <link rel="shortcut icon" href="Images/favicon.jpg" type="image/svg+xml">
+
+    <!-- Link in Css -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+    <main class="app">
+
+        <section class="greeting">
+            <h2 class="title">
+                What's up, <input type="text" id="name" placeholder="Name here">
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>CREATE A TODO</h3>
+
+            <form id="new-todo-form">
+                <h4>What's on your todo?</h4>
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content" 
+                    placeholder="e.g. make a video" /> <br>
+
+                    <h4>Pick a category</h4>
+
+                    <div class="options">
+
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="category" 
+                            id="category1" 
+                            value="business" />
+
+                            <span class="bubble business"></span>
+                            <div>Business</div>
+                        </label>
+
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="category" 
+                            id="category2" 
+                            value="persional" />
+
+                            <span class="bubble persional"></span>
+                            <div>Persional</div> 
+                        </label>
+
+                    </div>
+
+                    <input type="submit" value="Add todo">
+            </form>
+        </section>
+
+
+        <section class="todo-list">
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list">
+
+                <div class="todo-item done">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble business"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Make a video" readonly /> 
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble persional"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Get chocolate" readonly /> 
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Link in JavaScript --> 
+    <script src="Script.js"></script>    
+    
+</body>
+</html>
